@@ -23,7 +23,7 @@ function Register() {
   return (
     <div className="login-container">
       <div className="form-section">
-        <h2>Create a DailyLog Account</h2>
+        <h2>Sign Up to DailyLog</h2>
         <form onSubmit={handleRegister} className="form">
           <input
             type="text"
@@ -46,6 +46,7 @@ function Register() {
             required
             onChange={(e) => setPassword(e.target.value)}
           />
+          <p> Already have an account? <a href="/login">Log in</a></p>
           <button type="submit">Sign Up</button>
         </form>
 
